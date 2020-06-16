@@ -191,6 +191,10 @@ img
   transition: all .3s ease;
 }
 
+.flex-prev {
+  display: none;
+}
+
 .flex-direction-nav .flex-prev {
   left: -50px;
 }
