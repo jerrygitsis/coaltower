@@ -5,7 +5,7 @@
 
 body
 {
-  font-family: 'Signika', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   position: relative;
 }
@@ -52,18 +52,22 @@ img
 }
 
 /* start all section */
-.templatemo-section
+.website-section
 {
-  padding-top: 100px;
+  padding-top: 75px;
   padding-bottom: 100px;
   position: relative;
+}
+
+.maroon-bg {
+  background: maroon;
 }
 /* end all section */
 
 /* start nagivation */
 .navbar-default
 {
-  background: #ffffff;
+  background: white !important;
   border: none;
   -webkit-box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
   box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
@@ -76,6 +80,17 @@ img
   font-size: 40px;
   line-height: 35px;
 }
+
+.navbar-logo {
+  padding: 5px 15px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-logo {
+    padding: 3px 15px 3px;
+  }
+}
+
 .navbar-default .navbar-nav li a
 {
   line-height: 35px;
@@ -83,7 +98,7 @@ img
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover {
   color: #555;
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 .navbar-default .navbar-toggle
 {
@@ -92,7 +107,7 @@ img
 }
 .navbar-default .navbar-toggle .icon-bar
 {
-  background: #ffa400;
+  background: white;
   border-color: transparent;
 }
 .navbar-default .navbar-toggle:hover,
@@ -106,6 +121,7 @@ img
   max-width: 100%;
   min-width: 100%;
   overflow: hidden;
+  border-bottom: 10px solid maroon;
 }
 
 .flex-direction-nav a {
@@ -189,10 +205,6 @@ img
   cursor: pointer;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
-}
-
-.flex-prev {
-  display: none;
 }
 
 .flex-direction-nav .flex-prev {
@@ -391,6 +403,20 @@ html[xmlns] .slides {
   padding: 0;
   list-style: none;
 }
+
+@media screen and (max-width: 860px) {
+  .flexslider {
+    display: none;
+  }
+}
+
+.flex-prev {
+  display: none !important;
+}
+
+.flex-next {
+  display: none !important;
+}
 /* end flexslider */
 
 /* start about */
@@ -400,8 +426,7 @@ html[xmlns] .slides {
 }
 .img-bordered
 {
-  border: 2px solid #f2f2f2;
-  padding: 14px;
+  border: 2px solid maroon;
 }
 /* end about */
 
