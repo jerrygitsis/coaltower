@@ -1,0 +1,31 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %title= "Village Coal Tower"
+    %meta{:content => "", :name => "keywords"}
+    %meta{:content => "", :name => "description"}
+
+    %meta{:content => "IE=Edge", "http-equiv" => "X-UA-Compatible"}
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+    / google font
+    %link{:href => "//fonts.googleapis.com/css?family=Signika:400,300,600,700", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "//fonts.googleapis.com/css?family=Chewy", :rel => "stylesheet", :type => "text/css"}
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag 'application'
+
+  %body#home{"data-spy" => "scroll", "data-target" => ".navbar-collapse"}
+    = render partial: "shared/navbar"
+    = yield
+
+  = render partial: "shared/footer"
+
+
+  //%script{:src => "js/jquery.js"}
+  //%script{:src => "js/bootstrap.min.js"}
+  //%script{:src => "js/plugins.js"}
+  //%script{:src => "js/smoothscroll.js"}
+  //%script{:src => "js/custom.js"}
