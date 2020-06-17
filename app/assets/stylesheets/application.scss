@@ -3,6 +3,16 @@
  *= require_tree .
  */
 
+@font-face {
+  font-family: "Athena";
+  src: url(/assets/athena.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url(/assets/caveat.ttf) format("truetype");
+}
+
 body
 {
   font-family: 'Open Sans', sans-serif;
@@ -73,13 +83,16 @@ img
   background: maroon;
 }
 
-.image-about {
-  margin 0 auto;
+.coaltower-font {
+  font-family: "Caveat"
 }
 
-.coaltower-font {
-  font-family: "Avantgarde"
+.about__section {
+  p {
+    padding-left: 5px;
+  }
 }
+
 /* end all section */
 
 /* start nagivation */
@@ -163,7 +176,7 @@ img
 }
 .slider-title {
   font-size: 50px;
-  font-family: "Avantgarde";
+  font-family: "Athena";
   text-shadow: black 1px 3px 10px;
 }
 .slider-subtitle {
@@ -179,7 +192,7 @@ img
   line-height: 28px;
   padding-left: 200px;
   padding-right: 200px;
-  font-family: "Avantgarde";
+  font-family: "Athena";
   text-shadow: black 1px 3px 10px;
 }
 .no-js .slides > li:first-child {
@@ -427,12 +440,6 @@ html[xmlns] .slides {
   list-style: none;
 }
 
-@media screen and (max-width: 860px) {
-  .flexslider {
-    display: none;
-  }
-}
-
 .flex-prev {
   display: none !important;
 }
@@ -451,27 +458,13 @@ html[xmlns] .slides {
 {
   border: 5px solid maroon;
 }
-/* end about */
 
-/* start gallery */
-
-.templatemo-light-gray-bg
-{
-  background: #f9f9f9;
-}
 .gallery-wrapper
 {
   background: #ffffff;
   margin-top: 20px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
 }
-.gallery-wrapper:hover
-{
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
+
 .gallery-des
 {
   padding: 0 20px 14px 20px;
@@ -481,59 +474,7 @@ html[xmlns] .slides {
 }
 /* end gallery */
 
-/* start contact */
-.map
-{
-  height: 200px;
-}
-.contact-fa
-{
-  color: #202020;
-  font-size: 18px;
-  padding-right: 10px;
-}
-.contact-link { color: #F0A00E; }
-.form-control
-{
-  border: 2px solid #f2f2f2;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  margin-top: 12px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-.form-control:focus,
-.form-control:active
-{
-  border-color: #ffa400;
-}
-input
-{
-  height: 50px;
-}
-input[type="submit"]
-{
-  font-weight: bold;
-  margin-bottom: 80px;
-  margin-top: 20px;
-}
-input[type="submit"]:hover
-{
-  background: #ffa400;
-  color: #ffffff;
-}
-.form-control::-moz-placeholder {
-  color: #666;
-  opacity: 1;
-}
-.form-control:-ms-input-placeholder {
-  color: #666;
-}
-.form-control::-webkit-input-placeholder {
-  color: #666;
-}
-/* end contact */
+
 
 /* start footer */
 footer
@@ -547,36 +488,6 @@ footer
 }
 /* end footer */
 
-/* start social icon */
-.social-icon
-{
-  position: relative;
-  padding: 0;
-  margin: 0;
-}
-.social-icon li
-{
-  display: inline-block;
-  list-style: none;
-}
-.social-icon li a
-{
-  color: #666;
-  font-size: 13px;
-  text-decoration: none;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-}
-.social-icon li a:hover
-{
-  background: #ffa400;
-  color: #ffffff;
-}
-/* end social icon */
 
 @media only screen and (max-width:360px) {
   .navbar-default .navbar-brand { padding-top: 6px; }
@@ -615,10 +526,6 @@ IPHONE 4-4S-5 LANDSCAPE (568x320)
   .flexslider { padding: 50px 0 0 0; }
   .flex-caption { display: none; }
   .flex-direction-nav a { top: 60%; }
-  .templatemo-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
 }
 /********************************
 IPHONE 4-4S-5 PORTRAIT (320x568)
