@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  constraints(lambda { |request| request.original_url.include?(".measureup4u.")) do
+  constraints(lambda { |request| request.original_url.include?(".measureup4u.") }) do
     root to: 'measureup#index'
   end
     
