@@ -1,0 +1,74 @@
+$measureup-red: #c93c3c;
+
+.measureup-body {
+    .navbar {
+        border: none;
+    }
+
+    .navbar-default {
+        background-color: rgb(51, 51, 51);
+        color: white;
+    }
+    .navbar-logo {
+        max-height: 55px;
+    }
+
+    .nav-item {
+        color: white !important;
+    }
+
+    .main {
+        padding: 100px 0 35px;
+        border-bottom: 10px solid $measureup-red;
+        background-image: url(/assets/measureup/backsplash.jpg);
+        background-size: cover;
+    }
+
+    .measureup-container {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .img-bordered {
+        border: 5px solid $measureup-red;
+    }
+
+    .bio {
+        background-color: $measureup-red;
+
+        p {
+            font-family: "Indie Flower";
+            font-size: 24px;
+        }
+    }
+
+    .gallery {
+        background-color: $measureup-red;
+    }
+
+    h1 {
+        font-family: "Bebas Nueu";
+        font-weight: 700;
+        font-size: 60px;
+        color: $measureup-red;
+        margin: 0;
+    }
+
+    h3 {
+        font-family: "Bebas Nueu";
+        font-weight: 400;
+        font-size: 24px;
+        max-width: 220px;
+        color: white;
+        margin: 0;
+    }
+
+    .testemonials {
+        font-family: "Indie Flower";
+        font-size: 24px;
+        text-align: center;
+
+    }
+
+
+}

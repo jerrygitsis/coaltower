@@ -13,6 +13,17 @@
   src: url(/assets/caveat.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Indie Flower";
+  src: url(/assets/indieflower.ttf) format("truetype");
+}
+
+
+@font-face {
+  font-family: "Bebas Nueu";
+  src: url(/assets/bebasnueu.ttf) format("truetype");
+}
+
 body
 {
   font-family: 'Open Sans', sans-serif;
@@ -28,6 +39,7 @@ h1,h2, h3, h4,
 {        
   color: #ffa400;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .navbar-default .navbar-nav>.active>a, 
@@ -114,7 +126,7 @@ img
 /* start nagivation */
 .navbar-default
 {
-  background: white !important;
+  background: white;
   border: none;
   -webkit-box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
   box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
@@ -142,6 +154,7 @@ img
 {
   line-height: 35px;
 }
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover {
   color: #555;
