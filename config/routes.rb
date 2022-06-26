@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   end
   
   constraints(lambda { |request| request.original_url.include?("measureup") }) do  
+    get "/", to: 'measureup#index'
     get "/home", to: 'measureup#index'
-    get "/measureupmenu", to: 'measureup#menu'
+    get "/menu", to: 'measureup#menu'
     get "/macros", to: 'measureup#macros'
     get "/aboutme", to: 'measureup#aboutme'
   end
