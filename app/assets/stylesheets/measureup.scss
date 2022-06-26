@@ -1,6 +1,7 @@
 $measureup-red: #c93c3c;
 
 .measureup-body {
+
     .navbar {
         border: none;
     }
@@ -19,37 +20,67 @@ $measureup-red: #c93c3c;
 
     .main {
         padding: 100px 0 35px;
-        border-bottom: 10px solid $measureup-red;
+        border-bottom: 8px solid black;
         background-image: url(/assets/measureup/backsplash.jpg);
         background-size: cover;
     }
 
-    .measureup-container {
-        max-width: 800px;
-        margin: auto;
+    .main-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
+
+    .heading-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+
+    .order-button {
+	    background-color: $measureup-red;
+	    border-radius:3px;
+	    border:1px solid #942911;
+	    display:inline-block;
+	    cursor:pointer;
+	    color: white;
+	    font-family: "Bebas Nueu";
+	    font-size:21px;
+	    padding:14px 33px;
+	    text-decoration:none;
+	    text-shadow:0px 1px 0px #854629;
+
+        &:hover {
+            background-color:#bc3315;
+        }
+
+        &:active {
+            position:relative;
+            top:1px;
+        }
+    }   
 
     .img-bordered {
         border: 5px solid $measureup-red;
+        border-radius: 3px;
     }
 
-    .bio {
+    .main-img-container {
+        border-radius: 3px;
         background-color: $measureup-red;
-
-        p {
-            font-family: "Indie Flower";
-            font-size: 24px;
-        }
     }
 
-    .gallery {
-        background-color: $measureup-red;
+    .main-img {
+        max-width: 320px;
+        margin: auto
     }
 
     h1 {
         font-family: "Bebas Nueu";
         font-weight: 700;
-        font-size: 60px;
+        font-size: 74px;
         color: $measureup-red;
         margin: 0;
     }
@@ -61,14 +92,84 @@ $measureup-red: #c93c3c;
         max-width: 220px;
         color: white;
         margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .big-shadow {
+        text-shadow: -2px 5px 0 black;
+    }
+
+    .small-shadow {
+        text-shadow: -1px 3px 0 black;
     }
 
     .testemonials {
-        font-family: "Indie Flower";
-        font-size: 24px;
+        font-family: 'Bebas Nueu';
+        font-size: 30px;
         text-align: center;
-
+        background: linear-gradient(282deg, rgba(0,0,0,1) 0%, rgba(116,116,116,1) 40%, rgba(50,49,49,1) 98%);
+        padding: 20px 0;
+        border-bottom: 8px solid black;
     }
 
+    .testemonial-block {
+        margin-bottom: 45px;
+    }
 
+    .testemonial-container {
+        padding: 0px;
+        background-color: $measureup-red;
+        border: 1px solid $measureup-red;
+        border-radius: 10px;
+        padding: 5px;
+        color: white;
+    }
+    
+    .testemonial-container:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 26px solid transparent;
+        border-top-color: $measureup-red;
+        border-bottom: 0;
+        border-left: 0;
+        margin-left: -13px;
+        margin-bottom: -26px;
+        left: 60px;
+    }
+
+    .gallery {
+        background-color: $measureup-red;
+        border-bottom: 8px solid black;
+    }
+    
+    .bio {
+        background-color: $measureup-red;
+
+        p {
+            font-family: "Indie Flower";
+            font-size: 24px;
+        }
+    }
+
+    footer {
+        padding: 40px 0 60px;
+        font-size: 20px;
+        font-family: "Bebas Nueu";
+    }
+
+    .socials-container {
+        max-width: 200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .social {
+        width: 50px;
+        max-width: 50px;
+    };
 }
