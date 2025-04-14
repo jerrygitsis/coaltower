@@ -8,6 +8,9 @@ gem 'puma', '~> 4.1'
 gem 'sass-rails', '>= 6'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
+gem "mutex_m", "~> 0.3.0"
+gem 'concurrent-ruby', '1.3.4'
+gem 'bigdecimal', '3.1.8'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.4'
@@ -34,3 +37,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "haml", "~> 5.1"
+
